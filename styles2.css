@@ -1,0 +1,375 @@
+html, body {
+    height: 100%; /* Asegura que el body y html ocupen toda la altura */
+}
+/* Margen del cuerpo */
+body {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columnas */
+    justify-content: space-between; /* Asegura que el footer se mantenga al final */
+    background-color: hsla(0, 0%, 59%, 0.933);
+    margin: 0;
+    padding: 0;
+}
+
+/* Quitar punto a lista */
+ol, 
+ul {
+    list-style: none;
+}
+
+/* Quitar línea de vínculo */
+a {
+    text-decoration: none;
+}
+
+/* Banner de inicio estilo */ 
+header {
+    background-color: rgb(41, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6em; /* Ajusta según sea necesario */
+}
+
+
+
+/* Color, símbolo y tamaño al nombre de la web */
+.nombre-web {
+    color: white; /* Color del texto */
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 2em; /* Tamaño de la fuente */
+    padding: 1em; /* Espaciado alrededor */
+}
+
+
+/* Darle estilo a los banner de inicio hasta contacto */
+header nav ul {
+    display: flex;
+    font-family: "Playwrite GB S", cursive;
+    gap: 0.5em;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+/* Color del banner inicio a contacto */
+header nav ul li a {
+    color: white;
+}
+
+/* Ajustar sección 1 */
+.seccion-1 {
+    background-color: hsla(0, 1%, 56%, 0.933);
+    color: aliceblue;
+    font-family: "Playwrite GB S", cursive;
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row; /* Mantener en fila para pantallas grandes */
+    border-radius: 10% 30% 50% 70%;
+    gap: 1em;
+    text-align: justify;
+    margin: 1em;
+    padding: 1em;
+}
+/*MENU*/
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 1em;
+    color: white;
+    float: right;
+    line-height: 2em;
+    margin-right: 1em;
+    cursor: pointer;
+    display: none;
+}
+
+.imagen-redondeada {
+    border-radius: 50% 20% / 10% 40%; /* Ajusta este valor para redondear más o menos la imagen */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Ajustar sección 2 */
+.seccion-2 img { 
+    width: 100%;
+    margin-bottom: 2em
+}
+
+.trabajos-contenedor {
+    display: flex; /* Usar flex para alinear el título y las cajas en fila */
+    justify-content: space-between; /* Espacio entre el título y las cajas */
+    align-items: flex-start; /* Alinear en la parte superior */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    
+    padding: 1em; /* Añadir un poco de espacio alrededor */
+    flex-wrap: wrap;
+}
+
+.Trabajos {
+    flex: 0 0 auto; /* Evita que el título se expanda */
+    margin-right: 2em; /* Espacio entre el título y las cajas */
+}
+
+/* Ajustar sección cajas */
+.caja {
+    display: flex;
+    background-color: hsla(0, 1%, 56%, 0.933);
+    color: white;
+    font-family: "Playwrite GB S", cursive;
+    align-items: normal;
+    gap: 4em;
+    padding: 2em;
+    justify-content: center; /* Centra los elementos dentro de la sección */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan en pantallas pequeñas */
+    max-width: 105em; /* Define un ancho máximo para la sección de cajas */
+    margin: 0 auto; /* Centra la sección de cajas */
+    border-radius: 1em; /* Ajusta el valor para redondear más o menos las esquinas */
+    margin-bottom: 2em;
+}
+
+
+.caja1, .caja2, .caja3 {
+    width: 20em;  /* Ajusta el ancho de la caja */
+    padding: 1em;
+    background-color: #646363;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgb(3, 3, 3); /* Borde sombreado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.caja1 img, .caja2 img, .caja3 img {
+    border-radius: 1em;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.caja1 h3, .caja2 h3, .caja3 h3 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.caja1 p, .caja2 p, .caja3 p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #d4d1d1;
+    margin-bottom: 1em;
+}
+
+.caja .btn {
+    display: inline-block;
+    padding: 0 1em;
+    background-color: #353535;
+    color: white;
+    text-decoration: none;
+    border-radius: 1em;
+    transition: background-color 0.3em;
+}
+
+#footer {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    font-family: "Playwrite GB S", cursive;
+    font-size: 1.1em;
+    color: white;
+    border: 0.1em solid #333;
+    background-color: #413f3f;
+    text-align: center;
+}
+#btn-generar {
+    padding: 1em 1em;
+    font-size: 1.5em;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    color: white;
+    background-color: #413f3f;
+    cursor: pointer;
+}
+
+/* Color y estilo a pie de pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 75em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+    padding: 2.8em 0em;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 12em;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    font-family: "Playwrite GB S", cursive;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+}
+
+.pie-pagina .grupo-1 .box p{
+    font-family: "Playwrite GB S", cursive;
+    margin-bottom: 0.5em;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
+    color: white;
+    margin-right: 0.5em;
+    background-color: #646363;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #353535;
+}
+
+.pie-pagina .grupo-2{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 1.5em;
+    padding: 1em 0.5em;
+    text-align: center;
+
+}
+/* Botón WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 1em; /* Distancia desde el fondo */
+    right: 1em; /* Cambiar a un valor más pequeño */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    width: 3em; /* Ancho fijo para mantener el tamaño */
+    height: 3em; /* Alto fijo para mantener el tamaño */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .caja {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .caja1, .caja2, .caja3 {
+        width: 90%; /* Ancho más amplio en pantallas pequeñas */
+        margin: 1em 0; /* Añadir margen entre cajas */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .whatsapp-float {
+        left: 1em; /* Ajustar aún más la posición */
+        bottom: 1em; /* Ajustar distancia desde el fondo */
+        width: 2.5em; /* Reducir el tamaño */
+        height: 2.5em; /* Reducir el tamaño */
+    }
+}
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .seccion-1 {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar contenido */
+        padding: 1em; /* Añadir padding */
+    }
+
+    .seccion-1 .acerca-de,
+    .seccion-1 .acerca-imagen {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        text-align: center; /* Centrar texto */
+    }
+
+    .seccion-1 .acerca-imagen {
+        margin-top: 1em; /* Espacio arriba de la imagen */
+    }
+
+    .seccion-1 img {
+        width: 100%; /* Imagen a ancho completo */
+        height: auto; /* Mantener proporción */
+        border-radius: 1em; /* Redondear bordes de la imagen */
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    header nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100hv;
+        background:hsla(0, 0%, 15%, 0.933);
+        text-align: center;
+        top: 3em;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+     
+    /* Color del banner inicio a contacto */
+    header nav ul li a {
+      display: block;
+      margin: 1em 0;
+      line-height: 1em;
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+      }
+    
+    #check:checked ~ .checkbtn{
+        color: white;
+      }
+
+    #footer {
+        padding: 0.5em;
+        font-family: "Playwrite GB S", cursive;
+        font-size: 1.1em;
+        color: white;
+        
+        background-color: #413f3f;
+        width: 43em;
+        text-align: center;
+    }
+
+    #btn-generar {
+        padding: 1em 1em;
+        font-size: 1.5em;
+        font-family: "LXGW WenKai Mono TC", monospace;
+        color: white;
+        background-color: #413f3f;
+        cursor: pointer;
+    }
+
+}
+

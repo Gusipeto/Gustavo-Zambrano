@@ -1,0 +1,250 @@
+html, body {
+    height: 100%; /* Asegura que el body y html ocupen toda la altura */
+}
+/* Margen del cuerpo */
+body {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columnas */
+    justify-content: space-between; /* Asegura que el footer se mantenga al final */
+    background-color: hsla(0, 0%, 59%, 0.933);
+    margin: 0;
+    padding: 0;
+}
+
+/* Quitar punto a lista */
+ol, 
+ul {
+    list-style: none;
+}
+
+/* Quitar línea de vínculo */
+a {
+    text-decoration: none;
+}
+
+/* Banner de inicio estilo */ 
+header {
+    background-color: rgb(41, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6em; /* Ajusta según sea necesario */
+}
+
+
+
+/* Color, símbolo y tamaño al nombre de la web */
+.nombre-web {
+    color: white; /* Color del texto */
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 2em; /* Tamaño de la fuente */
+    padding: 1em; /* Espaciado alrededor */
+}
+
+
+/* Darle estilo a los banner de inicio hasta contacto */
+header nav ul {
+    display: flex;
+    font-family: "Playwrite GB S", cursive;
+    gap: 0.5em;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+/* Color del banner inicio a contacto */
+header nav ul li a {
+    color: white;
+}
+
+.titulo_seccion {
+    position: relative;
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 2.5rem; /* Usar unidades rem para mejor escalabilidad */
+    color: white;
+    text-align: center;
+}
+    
+.container {
+    max-width: 50em; /* Define el ancho máximo del contenedor */
+    margin: 0 auto 2em; /* Agrega margen inferior */
+    font-family: "Playwrite GB S", cursive; /*funte de titulos nombre y mensaje*/
+    font-size: 1.2em;
+    color: white; /*color fuente*/
+    border-radius: 2em; /* Bordes redondeados */
+    background-color:  #646363; /* Fondo blanco para el formulario */
+    box-shadow: 0 0 1em rgb(3, 3, 3); /* Borde sombreado */
+    padding: 2em; /* Espacio alrededor del formulario */
+}
+
+/*MENU*/
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 1em;
+    color: white;
+    float: right;
+    line-height: 2em;
+    margin-right: 1em;
+    cursor: pointer;
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 1em; /* Espacio entre cada input */
+    display: block;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar contenido */
+        padding: 1em; /* Añadir padding */
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    
+    header nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100hv;
+        background:hsl(0, 1%, 56%);
+        text-align: center;
+        top: 3em;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+         
+        /* Color del banner inicio a contacto */
+    header nav ul li a {
+        display: block;
+        margin: 1em 0;
+        line-height: 1em;
+    }
+    
+    header nav ul li a {
+        font-size: 1em;
+    }
+        
+    #check:checked ~ .checkbtn{
+        color: white;
+    }
+}
+
+
+label {
+    margin-bottom: 1em;
+    display: block; /* Asegura que las etiquetas se muestren en una nueva línea */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ancho completo */
+    font-family: "Playwrite GB S", cursive;
+    font-size: 0.7em;
+    padding: 1em;
+    border: 0 solid #f5f1f1;
+    border-radius: 1em;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+button {
+    background-color: #434344; /* Color de fondo boton */
+    color: white; /*color letra boton*/
+    border: none;
+    padding: 1em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #080808; /* Color al pasar el mouse */
+}
+
+/* Color y estilo a pie de pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(41, 40, 40);
+    color: white;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 75em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+    padding: 2.8em 0em;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 12em;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    font-family: "Playwrite GB S", cursive;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+}
+
+.pie-pagina .grupo-1 .box p{
+    font-family: "Playwrite GB S", cursive;
+    margin-bottom: 0.5em;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
+    color: white;
+    margin-right: 0.5em;
+    background-color: #646363;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #353535;
+}
+
+.pie-pagina .grupo-2{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 1.5em;
+    padding: 1em 0.5em;
+    text-align: center;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 40em) {
+    .titulo_seccion {
+        font-size: 1.5rem; /* Disminuir tamaño de texto en pantallas pequeñas */
+    }
+    header nav ul {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+}
